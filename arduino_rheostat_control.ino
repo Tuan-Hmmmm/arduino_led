@@ -1,0 +1,17 @@
+int led = 13;
+void setup()
+{
+    pinMode(led, OUTPUT);
+}
+void loop()
+{
+  int x=analogRead(A0);
+  int y=map(x,0,1023,200,1000);
+  digitalWrite(led,HIGH);
+  delay(y);
+  digitalWrite(led,LOW);
+  delay(y);
+
+}
+
+  
